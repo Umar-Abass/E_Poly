@@ -12,12 +12,31 @@
     background-repeat: no-repeat;
 }
 
+.text.anim{
+    animation-delay: 1.2s;
+}
+
+.img1.anim{
+    animation-delay: 1.7s;
+}
+
+.her.anim{
+    animation-delay: 1.45s;
+}
+
 .open {
     margin-top: 30dvh;
+}
+.para.anim{
+animation-delay: 0.5s;
 }
 
 .s {
     margin-left: 630px;
+}
+
+.s.anim{
+    animation-delay: 1s;
 }
 
 .joy {
@@ -42,7 +61,19 @@
 }
 
 .navbar-semi-transparent .navbar-nav .nav-link:hover {
-    color: #f8f9fa;
+    color: rgba(0, 0, 0, 0.726);
+}
+
+.fa-magnifying-glass:hover{
+    color: white;
+}
+
+.row.anim{
+    animation-delay: 0.5s;
+}
+
+.begin:hover{
+    color: rgba(0, 0, 0, 0.726);
 }
 
 /* .row{
@@ -58,9 +89,20 @@
 .card-body{
     text-align: center;
 }
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 @media screen and (max-width: 576px) {
     .s {
-        margin-left: 128px;
+        margin-left: 138px;
     }
 
     .map {
